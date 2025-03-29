@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Para Você, Meu Amor</title>
+    <style>
+        body {
+            background-color: #ffdde1;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            text-align: center;
+            font-family: Arial, sans-serif;
+        }
+        .container {
+            background: white;
+            padding: 20px;
+            border-radius: 10px;
+            box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.2);
+        }
+        h1 {
+            color: #ff4e50;
+        }
+        p {
+            color: #333;
+        }
+        .heart {
+            color: red;
+            font-size: 50px;
+            animation: pulse 1s infinite;
+        }
+        @keyframes pulse {
+            0% { transform: scale(1); }
+            50% { transform: scale(1.2); }
+            100% { transform: scale(1); }
+        }
+        button {
+            background: #ff4e50;
+            color: white;
+            border: none;
+            padding: 10px 20px;
+            border-radius: 5px;
+            cursor: pointer;
+            margin-top: 10px;
+        }
+        button:hover {
+            background: #e53935;
+        }
+        .no-button {
+            background: gray;
+            cursor: not-allowed;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>Para Você, Meu Amor ❤️</h1>
+        <p>Eu sei que talvez tenha te magoado, mas quero te lembrar o quanto você é especial para mim.</p>
+        <p>Me perdoa? 💕</p>
+        <div class="heart">❤️</div>
+        <button onclick="mostrarMensagem()">Clique aqui</button>
+        <p id="mensagem" style="display: none; color: #ff4e50; font-weight: bold;">Eu te amo muito! 💖</p>
+        
+        <h2>Quer namorar comigo? 💍</h2>
+        <button onclick="aceitou()">Sim 💖</button>
+        <button class="no-button">Não ❌</button>
+    </div>
+    <script>
+        function mostrarMensagem() {
+            document.getElementById('mensagem').style.display = 'block';
+        }
+        function aceitou() {
+            alert('Sabia que você diria sim! Te amo! Dança gatinha dança 💕');
+        }
+    </script>
+</body>
+</html>
